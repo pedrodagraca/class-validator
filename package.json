@@ -6,15 +6,15 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "author": {
-    "name": "Umed Khudoiberdiev",
-    "email": "pleerock.me@gmail.com"
+    "name": "Pedro da Graca",
+    "email": "pedrodagraca@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pleerock/class-validator.git"
+    "url": "https://github.com/pedrodagraca/class-validator.git"
   },
   "bugs": {
-    "url": "https://github.com/pleerock/class-validator/issues"
+    "url": "https://github.com/pedrodagraca/class-validator/issues"
   },
   "tags": [
     "validator",
