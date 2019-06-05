@@ -451,6 +451,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isBooleanString(value: string): boolean {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.validatorJs.isBoolean(value);
     }
 
@@ -459,6 +461,7 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isNumberString(value: string, options?: ValidatorJS.IsNumericOptions): boolean {
+
         return typeof value === "string" && this.validatorJs.isNumeric(value, options);
     }
 
@@ -471,6 +474,7 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     contains(value: string, seed: string): boolean {
+
         return typeof value === "string" && this.validatorJs.contains(value, seed);
     }
 
@@ -527,6 +531,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isCreditCard(value: string): boolean {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.validatorJs.isCreditCard(value);
     }
 
@@ -535,6 +541,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isCurrency(value: string, options?: ValidatorJS.IsCurrencyOptions): boolean {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.validatorJs.isCurrency(value, options);
     }
 
@@ -543,6 +551,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isEmail(value: string, options?: ValidatorJS.IsEmailOptions): boolean {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.validatorJs.isEmail(value, options);
     }
 
@@ -639,6 +649,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isLowercase(value: string): boolean {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.validatorJs.isLowercase(value);
     }
 
@@ -648,6 +660,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isMobilePhone(value: string, locale: ValidatorJS.MobilePhoneLocale): boolean {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.validatorJs.isMobilePhone(value, locale);
     }
 
@@ -697,6 +711,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isURL(value: string, options?: ValidatorJS.IsURLOptions): boolean {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.validatorJs.isURL(value, options);
     }
 
@@ -713,6 +729,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     isUppercase(value: string): boolean {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.validatorJs.isUppercase(value);
     }
 
@@ -737,6 +755,8 @@ export class Validator {
      * If given value is not a string, then it returns false.
      */
     maxLength(value: string, max: number) {
+        if (value === undefined || value === null || value === "")
+            return true;
         return typeof value === "string" && this.length(value, 0, max);
     }
 
